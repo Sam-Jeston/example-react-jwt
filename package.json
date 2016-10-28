@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors"
+    "start": "webpack-dev-server --config config/webpack.dev.js --progress --colors",
+    "prod": "rm -rf dist && webpack --config config/webpack.prod.js --progress"
   },
   "author": "Sam Jeston",
   "license": "ISC",
@@ -22,6 +23,10 @@
     "rxjs-es": "^5.0.0-beta.12",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.9.5",
-    "typescript": "^2.0.3"
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.24.0"
   }
 }
