@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config config/webpack.dev.js --progress --colors",
-    "prod": "rm -rf dist && webpack --config config/webpack.prod.js --progress"
+    "prod": "rm -rf dist && webpack -p --config config/webpack.prod.js --progress"
   },
   "author": "Sam Jeston",
   "license": "ISC",
