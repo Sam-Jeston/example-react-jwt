@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config config/webpack.dev.js --progress --colors",
+    "start": "rm -rf dist && webpack-dev-server --progress --colors --inline",
     "prod": "rm -rf dist && webpack -p --config config/webpack.prod.js --progress"
   },
   "author": "Sam Jeston",
@@ -17,16 +17,24 @@
     "@types/react-dom": "^0.14.18",
     "@types/react-router": "^2.0.38",
     "@types/rx": "^2.5.33",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "materialize-css": "^0.97.7",
+    "node-sass": "^3.10.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
     "rxjs-es": "^5.0.0-beta.12",
+    "sass-loader": "^4.0.2",
     "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
     "ts-loader": "^0.9.5",
     "typescript": "^2.0.3",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-merge": "^0.15.0"
   },
   "devDependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.0"
   }
 }

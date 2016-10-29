@@ -29,6 +29,8 @@ export class Hello extends React.Component<HelloProps, HelloState> {
         <br/>
         <br/>
         <button onClick={this.counterToggle}>Lets go up</button>
+        <br/>
+        <button className="waves-effect waves-light btn">button</button>
         <p>What are we now?</p>
         <p>{this.state.currentCount}</p>
         <Mini />
